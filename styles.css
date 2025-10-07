@@ -69,3 +69,65 @@ section {
 h1 {
     color: #4CAF50;
 }
+
+h2, h3 {
+    color: #444;
+}
+
+h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.container a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.container a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+.skills-column {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .skills-column {
+        flex: 1;
+        margin-bottom: 0;
+    }
+}
+
+.about-links {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container .link-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.container .link-button:hover {
+    background-color: #45a049;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
